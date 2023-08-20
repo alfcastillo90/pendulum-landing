@@ -1,0 +1,91 @@
+/* Estilos personalizados para responsividad */
+@media (max-width: 767px) {
+
+    /* Estilos para pantallas pequeñas */
+    .jumbotron h1 {
+      font-size: 24px;
+    }
+  
+    .jumbotron p {
+      font-size: 16px;
+    }
+  
+    .jumbotron .btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    /* Testimonios de Usuarios */
+    .rounded-circle {
+      max-width: 80%;
+      margin: 0 auto;
+      /* Centrar imágenes */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    /* Estilos para pantallas medianas y más grandes */
+  }
+  
+  /* Estilos de encabezado */
+  .jumbotron {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-bottom: 0;
+  }
+  
+  /* Imágenes responsivas */
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Otros estilos según necesidad */
+  /* Estilo para el placeholder de la imagen */
+  .placeholder-image {
+    font-weight: bold;
+    color: #7a7a7a;
+    border: 2px dashed #7a7a7a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos basados en colores de Vue.js */
+  .navbar {
+    background-color: #35495E;
+  }
+  
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: white !important;
+  }
+  
+  .jumbotron {
+    background-color: #42B883;
+    color: white;
+  }
+  
+  #beneficios {
+    background-color: #35495E;
+    color: white;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  #como-funciona {
+    background-color: #42B883;
+    color: white;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  #contacto {
+    background-color: #35495E;
+    color: white;
+  }
+  
+  footer {
+    background-color: #42B883;
+  }
