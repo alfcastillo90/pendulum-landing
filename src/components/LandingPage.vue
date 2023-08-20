@@ -41,43 +41,47 @@
         Ingresa la imagen aquí
       </div>
 
-      <button class="btn btn-primary">Más información</button>
+      <a class="btn btn-primary" href="#contacto">Más información</a>
     </header>
 
     <!-- Beneficios y Características -->
-    <section class="container-fluid" id="beneficios">
-      <h2 class="text-center mb-4">Beneficios y Características</h2>
-      <div class="row">
-        <div class="col-md-6">
-          <ul>
-            <li>Optimización Efectiva: Soluciones óptimas en tiempos razonables.</li>
-            <li>Reducción de Costos Computacionales: Soluciones con costos acotados.</li>
-            <li>Integración Sencilla: Facilidad de integración con otros sistemas.</li>
-            <li>Respuesta al Desabastecimiento: Mejora en la atención médica.</li>
-            <li>Seguridad en la Distribución: Reducción de riesgos en la cadena de suministros.</li>
-            <li>Mejora en la Atención Médica: Disponibilidad de medicamentos esenciales.</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <ul>
-            <li>Algoritmo de Búsqueda del Péndulo (PSA).</li>
-            <li>API Restful con Node.js y MongoDB.</li>
-            <li>Aplicación Web Integrada.</li>
-            <li>Basado en Investigación Exhaustiva.</li>
-            <li>Enfoque en la Realidad Chilena.</li>
-            <li>Pruebas y Evaluaciones Rigurosas.</li>
-          </ul>
+    <section class="p-5" id="beneficios">
+      <div class="container">
+        <h2 class="text-center mb-4">Beneficios y Características</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <ul>
+              <li>Optimización Efectiva: Soluciones óptimas en tiempos razonables.</li>
+              <li>Reducción de Costos Computacionales: Soluciones con costos acotados.</li>
+              <li>Integración Sencilla: Facilidad de integración con otros sistemas.</li>
+              <li>Respuesta al Desabastecimiento: Mejora en la atención médica.</li>
+              <li>Seguridad en la Distribución: Reducción de riesgos en la cadena de suministros.</li>
+              <li>Mejora en la Atención Médica: Disponibilidad de medicamentos esenciales.</li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul>
+              <li>Algoritmo de Búsqueda del Péndulo (PSA).</li>
+              <li>API Restful con Node.js y MongoDB.</li>
+              <li>Aplicación Web Integrada.</li>
+              <li>Basado en Investigación Exhaustiva.</li>
+              <li>Enfoque en la Realidad Chilena.</li>
+              <li>Pruebas y Evaluaciones Rigurosas.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
+
     <!-- Sección Cómo Funciona -->
-    <section class="container-fluid" id="como-funciona">
+    <section class="container-fluid p-5" id="como-funciona">
       <h2 class="text-center mb-4">Cómo Funciona</h2>
 
+      <!-- Primera fila -->
       <div class="row">
         <!-- Paso 1: Usuario Interactúa con la Aplicación Web -->
-        <div class="col-md-3 text-center">
+        <div class="col-md-6 text-center">
           <div class="mb-3">
             <font-awesome-icon :icon="['fas', 'mouse-pointer']" size="3x"></font-awesome-icon>
           </div>
@@ -86,16 +90,19 @@
         </div>
 
         <!-- Paso 2: La Aplicación Web se comunica con la API RESTful -->
-        <div class="col-md-3 text-center">
+        <div class="col-md-6 text-center">
           <div class="mb-3">
             <font-awesome-icon :icon="['fas', 'exchange-alt']" size="3x"></font-awesome-icon>
           </div>
           <h4>2. Comunicación con la API</h4>
           <p>La aplicación web envía y recibe datos a través de la API RESTful desarrollada con NestJS.</p>
         </div>
+      </div>
 
+      <!-- Segunda fila -->
+      <div class="row">
         <!-- Paso 3: La API procesa la solicitud usando NestJS -->
-        <div class="col-md-3 text-center">
+        <div class="col-md-6 text-center">
           <div class="mb-3">
             <font-awesome-icon :icon="['fas', 'code']" size="3x"></font-awesome-icon>
           </div>
@@ -104,25 +111,23 @@
         </div>
 
         <!-- Paso 4: MongoDB almacena o recupera datos -->
-        <div class="col-md-3 text-center">
+        <div class="col-md-6 text-center">
           <div class="mb-3">
             <font-awesome-icon :icon="['fas', 'hdd']" size="3x"></font-awesome-icon>
           </div>
           <h4>4. Interacción con MongoDB</h4>
           <p>MongoDB almacena o recupera los datos necesarios, asegurando eficiencia y escalabilidad.</p>
         </div>
-
       </div>
     </section>
 
 
-
     <!-- Sección de Contacto -->
-    <section class="container-fluid" id="contacto">
+    <section class="container-fluid p-5" id="contacto">
       <h2 class="text-center mb-4">Contáctanos</h2>
 
       <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6 mx-auto">
           <form @submit.prevent="submitForm">
             <!-- Nombre -->
             <div class="mb-3">
@@ -158,7 +163,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 ">
       <div class="container text-center">
         <p>Sígueme en:</p>
         <a :href="linkedinUrl" target="_blank" class="text-white mx-2">
@@ -226,13 +231,6 @@ export default {
   /* Estilos para pantallas medianas y más grandes */
 }
 
-/* Estilos generales */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 /* Estilos de encabezado */
 .jumbotron {
   background-color: #f8f9fa;
@@ -276,11 +274,15 @@ body {
 #beneficios {
   background-color: #35495E;
   color: white;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #como-funciona {
   background-color: #42B883;
   color: white;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 #contacto {
