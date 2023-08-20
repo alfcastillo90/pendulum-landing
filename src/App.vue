@@ -1,5 +1,5 @@
 <template>
-  <LandingPage/>
+  <LandingPage />
 </template>
 
 <script>
@@ -12,3 +12,8 @@ export default {
   }
 }
 </script>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+</style>

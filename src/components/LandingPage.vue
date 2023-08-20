@@ -1,9 +1,12 @@
 <template>
   <div>
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Algoritmo del Péndulo</a>
+        <!-- Logo (si tienes uno) -->
+        <a class="navbar-brand" href="#">
+          Algoritmo del Péndulo
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -19,10 +22,15 @@
             <li class="nav-item">
               <a class="nav-link" href="#contacto">Contacto</a>
             </li>
+            <!-- Botón de acción -->
+            <li class="nav-item">
+              <a href="#registro" class="btn btn-primary ml-3">Regístrate</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <header class="jumbotron text-center d-flex flex-column justify-content-center align-items-center">
       <h1>Algoritmo de búsqueda del pendulo</h1>
       <p>Optimizando la distribución de medicamentos: Una solución tecnológica ante el desabastecimiento</p>
@@ -37,10 +45,10 @@
     </header>
 
     <!-- Beneficios y Características -->
-    <section class="container my-5" id="beneficios">
+    <section class="container-fluid" id="beneficios">
+      <h2 class="text-center mb-4">Beneficios y Características</h2>
       <div class="row">
         <div class="col-md-6">
-          <h2>Beneficios</h2>
           <ul>
             <li>Optimización Efectiva: Soluciones óptimas en tiempos razonables.</li>
             <li>Reducción de Costos Computacionales: Soluciones con costos acotados.</li>
@@ -51,7 +59,6 @@
           </ul>
         </div>
         <div class="col-md-6">
-          <h2>Características</h2>
           <ul>
             <li>Algoritmo de Búsqueda del Péndulo (PSA).</li>
             <li>API Restful con Node.js y MongoDB.</li>
@@ -65,14 +72,14 @@
     </section>
 
     <!-- Sección Cómo Funciona -->
-    <section class="container my-5" id="como-funciona">
+    <section class="container-fluid" id="como-funciona">
       <h2 class="text-center mb-4">Cómo Funciona</h2>
 
       <div class="row">
         <!-- Paso 1: Usuario Interactúa con la Aplicación Web -->
         <div class="col-md-3 text-center">
           <div class="mb-3">
-            <i class="fas fa-user fa-3x"></i>
+            <font-awesome-icon :icon="['fas', 'mouse-pointer']" size="3x"></font-awesome-icon>
           </div>
           <h4>1. Interacción del Usuario</h4>
           <p>El usuario interactúa con la aplicación web, ingresando datos o solicitando información.</p>
@@ -81,7 +88,7 @@
         <!-- Paso 2: La Aplicación Web se comunica con la API RESTful -->
         <div class="col-md-3 text-center">
           <div class="mb-3">
-            <i class="fas fa-cloud fa-3x"></i>
+            <font-awesome-icon :icon="['fas', 'exchange-alt']" size="3x"></font-awesome-icon>
           </div>
           <h4>2. Comunicación con la API</h4>
           <p>La aplicación web envía y recibe datos a través de la API RESTful desarrollada con NestJS.</p>
@@ -90,7 +97,7 @@
         <!-- Paso 3: La API procesa la solicitud usando NestJS -->
         <div class="col-md-3 text-center">
           <div class="mb-3">
-            <i class="fas fa-cogs fa-3x"></i>
+            <font-awesome-icon :icon="['fas', 'code']" size="3x"></font-awesome-icon>
           </div>
           <h4>3. Procesamiento con NestJS</h4>
           <p>NestJS procesa la solicitud, interactuando con la base de datos o ejecutando lógica de negocio.</p>
@@ -99,16 +106,19 @@
         <!-- Paso 4: MongoDB almacena o recupera datos -->
         <div class="col-md-3 text-center">
           <div class="mb-3">
-            <i class="fas fa-database fa-3x"></i>
+            <font-awesome-icon :icon="['fas', 'hdd']" size="3x"></font-awesome-icon>
           </div>
           <h4>4. Interacción con MongoDB</h4>
           <p>MongoDB almacena o recupera los datos necesarios, asegurando eficiencia y escalabilidad.</p>
         </div>
+
       </div>
     </section>
 
+
+
     <!-- Sección de Contacto -->
-    <section class="container my-5" id="contacto">
+    <section class="container-fluid" id="contacto">
       <h2 class="text-center mb-4">Contáctanos</h2>
 
       <div class="row justify-content-center">
@@ -148,7 +158,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="bg-dark text-white py-4">
       <div class="container text-center">
         <p>Sígueme en:</p>
         <a :href="linkedinUrl" target="_blank" class="text-white mx-2">
@@ -246,6 +256,40 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Estilos basados en colores de Vue.js */
+.navbar {
+  background-color: #35495E;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important;
+}
+
+.jumbotron {
+  background-color: #42B883;
+  color: white;
+}
+
+#beneficios {
+  background-color: #35495E;
+  color: white;
+}
+
+#como-funciona {
+  background-color: #42B883;
+  color: white;
+}
+
+#contacto {
+  background-color: #35495E;
+  color: white;
+}
+
+footer {
+  background-color: #42B883;
 }
 </style>
   
