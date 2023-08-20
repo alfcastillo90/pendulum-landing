@@ -83,7 +83,7 @@
         <!-- Paso 1: Usuario Interactúa con la Aplicación Web -->
         <div class="col-md-6 text-center">
           <div class="mb-3">
-            <font-awesome-icon :icon="['fas', 'mouse-pointer']" size="3x"></font-awesome-icon>
+            <i class="fas fa-mouse-pointer fa-3x"></i>
           </div>
           <h4>1. Interacción del Usuario</h4>
           <p>El usuario interactúa con la aplicación web, ingresando datos o solicitando información.</p>
@@ -92,7 +92,7 @@
         <!-- Paso 2: La Aplicación Web se comunica con la API RESTful -->
         <div class="col-md-6 text-center">
           <div class="mb-3">
-            <font-awesome-icon :icon="['fas', 'exchange-alt']" size="3x"></font-awesome-icon>
+            <i class="fas fa-exchange-alt fa-3x"></i>
           </div>
           <h4>2. Comunicación con la API</h4>
           <p>La aplicación web envía y recibe datos a través de la API RESTful desarrollada con NestJS.</p>
@@ -104,7 +104,7 @@
         <!-- Paso 3: La API procesa la solicitud usando NestJS -->
         <div class="col-md-6 text-center">
           <div class="mb-3">
-            <font-awesome-icon :icon="['fas', 'code']" size="3x"></font-awesome-icon>
+            <i class="fas fa-code fa-3x"></i>
           </div>
           <h4>3. Procesamiento con NestJS</h4>
           <p>NestJS procesa la solicitud, interactuando con la base de datos o ejecutando lógica de negocio.</p>
@@ -113,7 +113,7 @@
         <!-- Paso 4: MongoDB almacena o recupera datos -->
         <div class="col-md-6 text-center">
           <div class="mb-3">
-            <font-awesome-icon :icon="['fas', 'hdd']" size="3x"></font-awesome-icon>
+            <i class="fas fa-hdd fa-3x"></i>
           </div>
           <h4>4. Interacción con MongoDB</h4>
           <p>MongoDB almacena o recupera los datos necesarios, asegurando eficiencia y escalabilidad.</p>
@@ -167,10 +167,10 @@
       <div class="container text-center">
         <p>Sígueme en:</p>
         <a :href="linkedinUrl" target="_blank" class="text-white mx-2">
-          <font-awesome-icon :icon="['fab', 'linkedin']" size="2x"></font-awesome-icon>
+          <i class="fab fa-linkedin fa-2x"></i>
         </a>
         <a :href="githubUrl" target="_blank" class="text-white mx-2">
-          <font-awesome-icon :icon="['fab', 'github']" size="2x"></font-awesome-icon>
+          <i class="fab fa-github fa-2x"></i>
         </a>
       </div>
     </footer>
